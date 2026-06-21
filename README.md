@@ -28,18 +28,19 @@
 2. 每次准备发信前，复制并填写 [templates/pre-send-risk-review.md](templates/pre-send-risk-review.md)。
 3. 只审核标题和正文时，用 [templates/email-copy-review.md](templates/email-copy-review.md)。
 4. 出现退信、投诉、进垃圾箱、拒收等异常时，用 [templates/sending-incident-review.md](templates/sending-incident-review.md)。
-5. Codex 会按 [AGENTS.md](AGENTS.md) 的规则给出明确结论。
+5. Codex 会按 [AGENTS.md](AGENTS.md) 和 [外贸冷邮件开发业务总规则](docs/business-development-rules.md) 给出明确结论。
 
-## 风险结论
+## S/A/B/C 评级
 
-每次审核必须输出一个结论：
+每次审核必须输出一个评级和动作：
 
-- `可发`：基础风险低，可以按计划执行。
-- `小改后可发`：有小问题，改完再发。
-- `减量发送`：可以小量测试，但数量、节奏或名单质量有风险。
-- `暂停发送`：认证、退信、投诉、名单、内容或节奏已有明显问题。
-- `禁止这样发`：会明显伤害域名声誉、误导收件人、骚扰收件人或缺少退出机制。
-- `需要先确认合规`：涉及高合规风险地区或合法依据不清。
+- `S 级`：高度匹配，低量稳定发送。
+- `A 级`：匹配度高，小改后发送。
+- `B 级`：证据偏弱，先补资料或极小量测试。
+- `C 级`：相关性弱，默认不发。
+- `禁止发送`：命中红线，必须拦截。
+
+动作包括：`可发`、`小改后可发`、`减量测试`、`暂停发送`、`禁止发送`、`需要先确认合规`。
 
 ## 核心原则
 
@@ -77,6 +78,7 @@
 ## 文档
 
 - [完整风控框架](docs/risk-framework.md)
+- [外贸冷邮件开发业务总规则](docs/business-development-rules.md)
 - [日常操作指南](docs/operating-guide.md)
 - [合规说明](docs/legal-notes.md)
 - [资料来源](docs/sources.md)
