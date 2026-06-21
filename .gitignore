@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and local exports
+*.log
+exports/
+tmp/
+
+# Secrets and private data
+.env
+.env.*
+*.pem
+*.key
+accounts.json
+customer-list*
+leads*
+*.csv
+*.xlsx
+*.xls
